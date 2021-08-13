@@ -53,7 +53,7 @@ Rancher relies on cert-manager to issue certificates from Rancher's own generate
 kubectl apply -f https://github.com/jetstack/cert-manager/releases/download/v1.4.0/cert-manager.yaml
 ```
 
-### Create `cattel-system` namespace
+### Create `cattle-system` namespace
 Create the namespace where the Rancher application resources will be deployed.
 ```
 kubectl create namespace cattle-system
