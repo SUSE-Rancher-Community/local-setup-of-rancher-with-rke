@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
     # This will be applied to every vagrant file that comes after it
-    config.vm.box = "bento/opensuse-leap-15.2"
+    config.vm.box = "opensuse/Leap-15.2.x86_64"
     # K8s Control Plane
     ## Master Node
     config.vm.define "master" do |k8s_master|
