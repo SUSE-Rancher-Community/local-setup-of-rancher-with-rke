@@ -59,6 +59,11 @@ Create the namespace where the Rancher application resources will be deployed.
 kubectl create namespace cattle-system
 ```
 
+### Add the Helm Chart Repository
+```
+helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
+```
+
 ### Install Rancher using Helm
 ```
 helm install rancher rancher-stable/rancher \
