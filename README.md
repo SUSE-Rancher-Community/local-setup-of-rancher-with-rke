@@ -64,12 +64,11 @@ kubectl create namespace cattle-system
 helm repo add rancher-stable https://releases.rancher.com/server-charts/stable
 ```
 
-### Install Rancher using Helm
+### Install Rancher using Helm (with Rancher generated CA)
 ```
 helm install rancher rancher-stable/rancher \
   --namespace cattle-system \
   --set hostname=<hostname>
-  --set letsEncrypt.email=<email>
 ```
 
 You may need to update the hosts on your local machine to resolve to the addresses of the Virtual Machines. To do this, go to `/etc/hosts` and add an entry for your hostname like this:
